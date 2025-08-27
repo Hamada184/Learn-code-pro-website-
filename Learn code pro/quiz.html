@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LearnX - Quiz</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">LearnX</div>
+    <nav class="tabs">
+      <a href="index.html" class="tab">Home</a>
+      <a href="lessons.html" class="tab">Lessons</a>
+      <a href="quiz.html" class="tab active">Quiz</a>
+      <a href="games.html" class="tab">Games</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="quiz-container">
+      <h1 style="margin-top:0;">Random Quiz</h1>
+      <div id="quiz"></div>
+      <div style="display:flex; gap:.5rem; margin-top:.5rem;">
+        <button class="btn" id="submitQuiz">Submit</button>
+        <a class="btn secondary" href="" onclick="location.reload(); return false;">Shuffle Again</a>
+      </div>
+      <p id="result" style="margin-top:1rem; font-weight:700;"></p>
+    </div>
+  </main>
+
+  <footer class="footer">Quizzes boost retention — keep testing yourself.</footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LearnX - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">LearnX</div>
+    <nav class="tabs">
+      <a href="index.html" class="tab active">Home</a>
+      <a href="lessons.html" class="tab">Lessons</a>
+      <a href="quiz.html" class="tab">Quiz</a>
+      <a href="games.html" class="tab">Games</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <div>
+        <h1>Learn by Doing</h1>
+        <p>Interactive lessons, quizzes, and mini‑games. Your progress and XP are saved locally — no signup needed.</p>
+        <div class="stats" style="margin-top:1rem;">
+          <div class="stat">
+            <div class="label">XP</div>
+            <div class="value" data-stat="xp">0</div>
+          </div>
+          <div class="stat">
+            <div class="label">Streak</div>
+            <div class="value" data-stat="streak">0</div>
+          </div>
+        </div>
+        <div style="margin-top:1rem;">
+          <a class="btn" href="lessons.html">Start Lessons →</a>
+          <a class="btn secondary" href="quiz.html">Take a Quiz</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0;">What you’ll get</h3>
+        <ul>
+          <li>W3Schools‑style “Try it Yourself” editor</li>
+          <li>freeCodeCamp‑style progress + XP</li>
+          <li>Randomized quizzes and fun games</li>
+        </ul>
+      </div>
+    </section>
+
+    <section style="margin-top:1rem;" class="grid grid-3">
+      <div class="card">
+        <h3>HTML & CSS</h3>
+        <p>Craft beautiful pages with semantic HTML and modern layouts.</p>
+        <a class="btn" href="lessons.html#HTML/intro">Open HTML Path</a>
+      </div>
+      <div class="card">
+        <h3>JavaScript</h3>
+        <p>Make pages interactive, handle events, and manipulate the DOM.</p>
+        <a class="btn" href="lessons.html#JavaScript/variables">Open JS Path</a>
+      </div>
+      <div class="card">
+        <h3>Python</h3>
+        <p>Learn core syntax and problem‑solving (simulated console).</p>
+        <a class="btn" href="lessons.html#Python/hello">Open Python Path</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Built for practice and progress — keep your streak alive every day.
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

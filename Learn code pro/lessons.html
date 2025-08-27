@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LearnX - Lessons</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">LearnX</div>
+    <nav class="tabs">
+      <a href="index.html" class="tab">Home</a>
+      <a href="lessons.html" class="tab active">Lessons</a>
+      <a href="quiz.html" class="tab">Quiz</a>
+      <a href="games.html" class="tab">Games</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Progress bar for current language -->
+    <div class="card" style="margin-bottom:1rem;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:.5rem;">
+        <strong>Lesson Progress</strong>
+        <span style="color:#8aa1bf;">Completing lessons awards XP</span>
+      </div>
+      <div class="progress"><div class="bar" id="progressBar" style="width:0%"></div></div>
+    </div>
+
+    <section class="lesson-layout">
+      <aside class="sidebar" id="sidebar"></aside>
+
+      <div class="card">
+        <h2 id="lessonTitle" style="margin-top:0;">Lesson</h2>
+        <div id="lessonContent"></div>
+
+        <!-- Step 3: Try it Yourself editor -->
+        <div class="editor" id="editorWrap" style="margin-top:1rem;">
+          <textarea id="codeArea" class="code"></textarea>
+          <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
+            <button class="btn" id="runBtn">Run ▶</button>
+            <button class="btn success" id="completeBtn">Mark Complete ✓</button>
+          </div>
+          <iframe id="preview" class="preview"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">Keep going — small steps daily become big skill jumps.</footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/lessons.js"></script>
+</body>
+</html>

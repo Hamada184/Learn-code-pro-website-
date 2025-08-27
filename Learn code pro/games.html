@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LearnX - Games</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">LearnX</div>
+    <nav class="tabs">
+      <a href="index.html" class="tab">Home</a>
+      <a href="lessons.html" class="tab">Lessons</a>
+      <a href="quiz.html" class="tab">Quiz</a>
+      <a href="games.html" class="tab active">Games</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2 style="margin-top:0;">HTML Tag Order</h2>
+      <p>Drag tags into the dropzone to form a valid HTML document.</p>
+      <div class="drag-container" id="tags"></div>
+
+      <h3>Drop Here</h3>
+      <div class="dropzone" id="dropzone"></div>
+
+      <div style="display:flex; gap:.5rem; margin-top:.75rem;">
+        <button class="btn" id="checkBtn">Check Order</button>
+        <button class="btn secondary" id="resetBtn">Reset</button>
+      </div>
+      <p id="gameResult" style="font-weight:700;"></p>
+    </section>
+  </main>
+
+  <footer class="footer">Play, practice, and grow your intuition.</footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/games.js"></script>
+</body>
+</html>
